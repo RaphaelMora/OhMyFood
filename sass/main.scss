@@ -1,0 +1,260 @@
+@import "mixins.scss";
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiaire: #99E2D0;
+$background: rgb(248, 248, 248);
+
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+.logo {
+    position: relative;
+    left: 190px;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $background;
+    width: 68%;
+    left: 80px;
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darken($background, $amount: 5);
+        width: 100%;
+        height: 50px;
+        box-shadow: inset 0px 3px 3px 0px lightgray;
+    }
+
+    .fa-location-dot {
+        position: relative;
+        top:15px;
+        color: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 30%;
+    }
+
+
+    .txt-box {
+        border: none;
+        background-color: darken($background, $amount: 5);
+        font-weight: bolder;
+    }
+
+    .send-btn {
+        @include color-gradient;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        width: 55%;
+        height: 50px;
+        margin: 20px 0 30px
+    }
+
+    article {
+        text-align: center;
+    }
+
+    p:nth-of-type(1) {
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 20px;
+        text-align: center;
+        margin: 0 20px;
+    }
+}
+
+ul li {
+    @include list;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: $background;
+    left: 75px;
+    width: 400px;
+    height: 85px;
+    margin-top: 10px;
+    gap: 20px;
+    &:hover {
+        color: $color-primary;
+        background-color: lighten($color-primary, $amount: 35);
+
+        p {
+            color: black;
+        }
+    }
+
+    p:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: $color-primary;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        left: 0;
+        transform: translateX(-50%);
+    }
+}
+
+h2 {
+    position: relative;
+    left: 130px;
+}
+
+.restaurants-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: $background;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 68%;
+    left: 80px;
+
+    h2 {
+        position: relative;
+        left:20px;
+    }
+
+}
+
+.restaurants-card {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 90%;
+    height: 240px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 3px 0px lightgray;
+
+    .new {
+        background-color: $color-tertiaire;
+        right: 20px;
+        position: absolute;
+        top: 30px;
+        color: darken($color-tertiaire, $amount: 50);
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    span {
+        display: block;
+        padding: 8px 15px;
+
+    }
+
+    img {
+        position: relative;
+        top: -50px;
+        width: 100%;
+        height: 220px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .fa-heart {
+        position: relative;
+        bottom: 55px;
+        left: 350px;
+        font-size: 22px;
+        cursor: pointer;
+        background: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+            background: linear-gradient(to bottom right, $color-primary, $color-secondary);
+            -webkit-text-stroke-width: 0;
+            -webkit-text-stroke-color: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .card-descrption {
+        position: relative;
+        top: -70px;
+        left: 15px;
+        font-size: 0.8em;
+            
+
+        p {
+            position: relative;
+            top: -15px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+    padding: 20px;
+    width: 62%;
+    position: relative;
+    left: 80px;
+
+    img {
+        filter: invert(100%);
+        font-family: 'Shrikhand', sans-serif;
+        width: 90px;
+        margin-bottom: 10px;
+    }
+
+    .fa-utensils {
+        padding-right: 10px;
+    }
+
+    .fa-handshake-angle {
+        padding-right: 5px;
+    }
+
+    p,
+    a {
+        font-size: 14px;
+        margin-bottom: 2px;
+        text-decoration: none;
+        color: white;
+    }
+}

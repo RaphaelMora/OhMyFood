@@ -1,0 +1,10 @@
+@mixin color-gradient {
+    background: linear-gradient(#FF79DA,#9356DC);
+}
+
+@mixin list {
+    list-style-type:none; 
+    color: black;
+    display: flex;
+    align-items: center;
+}

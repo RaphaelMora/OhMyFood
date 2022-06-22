@@ -1,0 +1,30 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+<<<<<<< HEAD
+    "sass": "sass --watch ./sass/index.scss:.public/css/style.css"
+=======
+        "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+>>>>>>> 1041cf8689ec35cae07c9da9d8ca3210427841f5
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelMora/OhMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphaelMora/OhMyFood/issues"
+  },
+<<<<<<< HEAD
+  "homepage": "https://github.com/RaphaelMora/OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+=======
+  "homepage": "https://github.com/RaphaelMora/OhMyFood#readme"
+>>>>>>> 1041cf8689ec35cae07c9da9d8ca3210427841f5
+}

@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+@mixin color-gradient {
+    background: linear-gradient(#FF79DA, #9356DC);
+}
+
+@mixin list {
+    list-style-type: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+@mixin points {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+=======
+@mixin color-gradient {
+    background: linear-gradient(#FF79DA, #9356DC);
+}
+
+@mixin list {
+    list-style-type: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+@mixin points {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+>>>>>>> 1041cf8689ec35cae07c9da9d8ca3210427841f5
