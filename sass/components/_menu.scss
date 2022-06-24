@@ -108,6 +108,7 @@ header {
         }
 
         .menu-description {
+            @include points;
             padding: 10px;
 
             h4,

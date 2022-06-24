@@ -164,6 +164,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top:20px;
 }
 
 .restaurants-card {
@@ -231,14 +232,12 @@ ul {
     .fa-heart {
         font-size: 22px;
         cursor: pointer;
-        background-color: white;
         background-blend-mode: color-dodge;
         transition: background-color 1s;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
 
         &:hover {
             background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
