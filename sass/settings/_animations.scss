@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @keyframes rotate {
     from {
         transform: rotate(-270deg);
@@ -51,59 +51,3 @@
         opacity: 1;
     }
 }
-
-=======
-@keyframes rotate {
-    from {
-        transform: rotate(-270deg);
-    }
-
-    to {
-        transform: rotate(0);
-    }
-}
-
-@keyframes rotate-reverse {
-    from {
-        transform: rotate(0);
-    }
-
-    to {
-        transform: rotate(-270deg);
-    }
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes rotate-loader {
-    from {
-        transform: rotate(-270deg);
-        opacity: 1;
-    }
-
-    to {
-        transform: rotate(0);
-        opacity: 0;
-    }
-}
-
-@keyframes background-appear {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
->>>>>>> 1041cf8689ec35cae07c9da9d8ca3210427841f5
