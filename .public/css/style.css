@@ -68,7 +68,6 @@ main {
   height: 250px;
   left: 18%;
   top: 10%;
-  transform: translateX(-50%, -50%);
 }
 
 .loader-spin {
@@ -409,7 +408,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: justify;
 }
 
 .logo {
