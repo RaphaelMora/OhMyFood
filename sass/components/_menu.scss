@@ -43,30 +43,36 @@ header {
     position: absolute;
 }
 
-.menu-title {
+.menu-title{
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-
-    .menu-heart {
-        font-size: 30px;
-        cursor: pointer;
-        background-image: linear-gradient(to bottom, transparent, transparent);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        &:hover {
-            background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
-            -webkit-text-stroke-width: 0;
-            -webkit-text-stroke-color: black;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
+    align-items: center;
 }
+
+.heart-card  {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .fa-heart-empty-menu {
+    cursor: pointer;
+    font-size:30px; 
+    position: absolute;
+    background-color: white;
+    transition: opacity 1s ease-in-out;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+  .fa-heart-color-menu {
+    font-size:30px; 
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 .container-menu {
     z-index: 1;
@@ -86,7 +92,6 @@ header {
         margin: 10px;
         animation: appear 3s;
 
-
         .menu-bloc {
             display: flex;
             overflow: hidden;
@@ -103,7 +108,6 @@ header {
             .fa-circle-check {
                 animation: rotate 0.8s;
             }
-
         }
 
         .menu-description {
@@ -170,7 +174,6 @@ h3 {
     :hover {
         box-shadow: 0 0 10px rgba(2,2,2, .5);
     }
-
 }
 
 .menu-btn {
@@ -207,7 +210,6 @@ h3 {
     .menu-btn {
         width: 20%;
     }
-
 }
 
 @media screen and (min-width: 981px) {

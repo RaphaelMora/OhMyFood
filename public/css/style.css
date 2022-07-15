@@ -254,20 +254,28 @@ ul li p:nth-of-type(1) {
   object-fit: cover;
   margin-bottom: 15px;
 }
-.restaurants-card .fa-heart {
-  font-size: 22px;
-  cursor: pointer;
-  background-blend-mode: color-dodge;
-  transition: background-color 1s;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.heart-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.restaurants-card .fa-heart:hover {
-  background-image: linear-gradient(to bottom right, #9356DC, #FF79DA);
-  -webkit-text-stroke-width: 0;
-  -webkit-text-stroke-color: black;
+
+.fa-heart-empty {
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  background-color: white;
+  transition: opacity 1s ease-in-out;
+}
+.fa-heart-empty:hover {
+  opacity: 0;
+}
+
+.fa-heart-color {
+  font-size: 22px;
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -444,23 +452,31 @@ header {
 
 .menu-title {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
-.menu-title .menu-heart {
-  font-size: 30px;
+
+.heart-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.fa-heart-empty-menu {
   cursor: pointer;
-  background-image: linear-gradient(to bottom, transparent, transparent);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  position: absolute;
+  background-color: white;
+  transition: opacity 1s ease-in-out;
 }
-.menu-title .menu-heart:hover {
-  background-image: linear-gradient(to bottom right, #9356DC, #FF79DA);
-  -webkit-text-stroke-width: 0;
-  -webkit-text-stroke-color: black;
+.fa-heart-empty-menu:hover {
+  opacity: 0;
+}
+
+.fa-heart-color-menu {
+  font-size: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
