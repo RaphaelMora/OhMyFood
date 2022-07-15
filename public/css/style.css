@@ -149,10 +149,7 @@ ul {
   padding: 0;
 }
 ul li {
-  list-style-type: none;
-  color: black;
-  display: flex;
-  align-items: center;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,6 +371,7 @@ html {
     width: 90%;
   }
   .step {
+    cursor: pointer;
     visibility: hidden;
   }
   .restaurants-container {

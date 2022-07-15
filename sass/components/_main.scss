@@ -112,7 +112,7 @@ ul {
     padding: 0;
 
     li {
-        @include list;
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -370,6 +370,7 @@ ul {
     }
 
     .step {
+        cursor: pointer;
         visibility: hidden;
     }
 
