@@ -621,7 +621,7 @@ header {
   .container-menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 2.6fr 0.4fr;
+    grid-template-rows: 0.5fr 0 2.6fr 0.8fr;
     grid-template-areas: "menu-title menu-title menu-title" "entries dishes dessert" "menu-entries menu-dishes menu-dessert" "btn btn btn";
   }
   .menu-section {

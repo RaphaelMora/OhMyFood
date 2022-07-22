@@ -230,7 +230,7 @@ ul {
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
+}
 
 .fa-heart-empty {
     cursor: pointer;
@@ -240,16 +240,16 @@ ul {
     transition: opacity 1s ease-in-out;
 
     &:hover {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
-  .fa-heart-color {
+.fa-heart-color {
     font-size: 22px;
     background: $gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 
 .about {
     display: flex;
