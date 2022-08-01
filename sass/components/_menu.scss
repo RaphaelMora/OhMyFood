@@ -60,7 +60,7 @@ header {
     cursor: pointer;
     font-size: 30px;
     position: absolute;
-    background-color: white;
+    background-color:  $background;
     transition: opacity 1s ease-in-out;
 
     &:hover {

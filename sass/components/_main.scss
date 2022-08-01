@@ -22,7 +22,7 @@ main {
     align-items: center;
     width: 250px;
     height: 250px;
-    left: 15%
+    left: 10%;
 }
 
 .loader-spin {
@@ -235,7 +235,7 @@ ul {
     cursor: pointer;
     font-size: 22px;
     position: absolute;
-    background-color: white;
+    background-color: $background;
     transition: opacity 1s ease-in-out;
 
     &:hover {
